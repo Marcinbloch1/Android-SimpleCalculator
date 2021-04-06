@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kosc_sloniowa"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/plusButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="@color/karmazynowy"
+        android:text="@string/plus_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bReText" />
+
+    <EditText
+        android:id="@+id/aReText"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="34dp"
+        android:ems="10"
+        android:hint="@string/re_text"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/aImText"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/bReText"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="33dp"
+        android:ems="10"
+        android:hint="@string/re_text"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/bImText"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/aReText" />
+
+    <EditText
+        android:id="@+id/aImText"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/im_text"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/aReText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/bImText"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/im_text"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/bReText"
+        app:layout_constraintTop_toBottomOf="@+id/aImText" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="60dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:drawableTint="#FFFFFF"
+        android:foregroundTint="#FFFFFF"
+        android:text="@string/a_text"
+        android:textColor="@color/fuksja"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/b_text"
+        android:textColor="@color/fuksja"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/minusButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="@color/karmazynowy"
+        android:text="@string/minus_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plusButton" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="37dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/plusButton"
+        app:layout_constraintTop_toBottomOf="@+id/bReText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

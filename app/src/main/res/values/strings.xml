@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MarcinBloch</string>
+    <string name="plus_button">+</string>
+    <string name="minus_button">-</string>
+    <string name="graph_button">View graph</string>
+    <string name="a_text">A:</string>
+    <string name="b_text">B:</string>
+    <string name="re_text">Re</string>
+    <string name="im_text">Im</string>
+    <string name="selected_item">Selected item</string>
+    <string-array name="spinner_list">
+        <item>Select</item>
+        <item>+</item>
+        <item>-</item>
+    </string-array>
+</resources>
